@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landscape - Monica J Photography</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia;
+            color: #000;
+            background: #fff;
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            z-index: 10;
+        }
+
+        .site-header::after {
+            content: "";
+            position: absolute;
+            left: 0.5in;
+            right: 0.5in;
+            bottom: 0;
+            height: 1px;
+            background: #000;
+        }
+
+        .top-bar {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand a {
+            color: #000;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .tabs a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: normal;
+            font-size: 18px;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding: 140px 24px 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel {
+            width: min(1100px, 100%);
+            min-height: 70vh;
+            background-image: url("Impermanence2.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 0.5in solid #fff;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 16px 20px;
+            }
+
+            .brand a {
+                font-size: 22px;
+            }
+
+            .tabs a {
+                font-size: 16px;
+                margin-left: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="top-bar">
+            <div class="brand">
+                <a href="index.html">MonicaJ Photography</a>
+            </div>
+            <div class="tabs">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="landscape.html">Landscape</a>
+                <a href="lifestyle.html">Lifestyle</a>
+                <a href="Commercial.html">Commercial</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="panel"></div>
+    </div>
+</body>
+</html>

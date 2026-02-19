@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Monica J Photography</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia;
+            background: #fff;
+            color: #000;
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            z-index: 10;
+        }
+
+        .site-header::after {
+            content: "";
+            position: absolute;
+            left: 0.5in;
+            right: 0.5in;
+            bottom: 0;
+            height: 1px;
+            background: #000;
+        }
+
+        .top-bar {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand a {
+            color: #000;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .tabs a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: normal;
+            font-size: 18px;
+        }
+
+        .content {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 140px 24px 40px;
+            box-sizing: border-box;
+        }
+
+        .contact-panel {
+            width: min(760px, 100%);
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        .contact-panel h1 {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 26px;
+        }
+
+        .icon-link {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            border-radius: 50%;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .icon-link svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .message-form {
+            display: grid;
+            gap: 14px;
+        }
+
+        .name-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            border: 1px solid #000;
+            padding: 10px;
+            font-family: Georgia;
+            font-size: 16px;
+            box-sizing: border-box;
+            background: #fff;
+            color: #000;
+        }
+
+        .field textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        .message-form button {
+            width: fit-content;
+            border: 1px solid #000;
+            background: #000;
+            color: #fff;
+            padding: 10px 16px;
+            font-family: Georgia;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 0 20px;
+            }
+
+            .brand a {
+                font-size: 22px;
+            }
+
+            .tabs a {
+                font-size: 16px;
+                margin-left: 14px;
+            }
+
+            .name-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="top-bar">
+        <div class="brand">
+            <a href="index.html">MonicaJ Photography</a>
+        </div>
+        <div class="tabs">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="landscape.html">Landscape</a>
+            <a href="lifestyle.html">Lifestyle</a>
+            <a href="Commercial.html">Commercial</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="contact-panel">
+            <h1>Contact</h1>
+            <div class="social-links">
+                <a class="icon-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.901 1.154h3.68l-8.04 9.189L24 22.846h-7.406l-5.799-7.584-6.639 7.584H.474l8.599-9.826L0 1.154h7.594l5.242 6.932zm-1.292 19.49h2.04L6.486 3.24H4.298z"></path>
+                    </svg>
+                </a>
+                <a class="icon-link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path>
+                    </svg>
+                </a>
+            </div>
+            <form class="message-form" action="https://formsubmit.co/monica_jalali@hotmail.com" method="post">
+                <input type="hidden" name="_subject" value="Website Message">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="contact.html">
+                <div class="name-row">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="First Name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" name="Last Name" type="text" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="Email" type="email" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
