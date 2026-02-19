@@ -15,6 +15,8 @@
             background: #2f2f2f;
             color: #f2ede3;
             font-family: "Playfair Display", serif;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .wrap {
@@ -34,6 +36,16 @@
             color: #f2ede3;
             text-decoration: none;
             font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: clamp(30px, 11vw, 56px);
+            }
+
+            .home-btn {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
